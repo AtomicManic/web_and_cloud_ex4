@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <title>CYBER CYBER CYBER</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+        <script src="js/editScripts.js"></script>
+    </head>
+    <body class="edit-frm">
+        <div class="container">
+            <h1>Hacker Team Creator</h1>
+            <section id="errors">
+                <p class="error" id="nameErr">Name - Invalid character or Empty</p>
+                <p class="error" id="checkErr">Fields - At Least one is required</p>
+                <p class="error" id="textErr">Manifest - Must have at least one dot.</p>
+            </section>
+            <form action="get_params.php" method="get">
+                <div class="form-group">
+                    <label for="groupName" class="label">
+                        Create Your Name:
+                    </label>
+                    <input type="text" name="groupName" id="groupName" class="form-control label">
+                    <small class="form-text discription">Make it cool - use only capital letters and small letters, numbers and the signs $, !</small>
+                </div>
+                <span class="label">
+                    Spacialty Fields:
+                </span>
+                <div class="form-check">
+                    <input type="checkbox" name="fields[]" id="corporate" value="Corporate" class="form-check-input fld-chck">
+                    <label for="corporate" class="form-check-label chk-label">Corporate</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" name="fields[]" id="politics" value="Politics" class="form-check-input fld-chck">
+                    <label for="politics" class="form-check-label chk-label">Politics</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" name="fields[]" id="humanRights" value="Human Rights" class="form-check-input fld-chck">
+                    <label for="corporate" class="form-check-label chk-label">Human Rights</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" name="fields[]" id="wDom" value="World Domination" class="form-check-input fld-chck">
+                    <label for="wDom" class="form-check-label chk-label">World Domination</label>
+                    <input type="hidden" name="fields[]" value="">
+                </div>
+                <div class="form-group">
+                    <label for="manifest" class="label">Manifesto:</label>
+                    <textarea name="manifest" id="manifest" cols="30" rows="5" class="form-control"></textarea>
+                    <small class="form-text discription">Make it CYBER cool!</small>
+                </div>
+                <div class="row text-center">
+                <button class="btn" type="submit" id="submit-btn"></button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

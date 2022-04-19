@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+}
+
+.edit-frm, .params{
+    background-color: #0E0E0E;
+}
+
+.edit-frm .row{
+    justify-content: center;
+}
+
+.edit-frm .container, .params .container{
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    margin-top: 50px;
+    box-shadow: -15px 15px 10px #04D924;
+    padding: 20px;
+}
+
+.edit-frm h1, .params h1{
+    text-align: center;
+    font-family: 'VT323', monospace;
+    color: #03A63C;
+    font-size: 50px;
+    text-shadow: -2px 2px #0E0E0E;
+}
+
+#submit-btn{
+    /* display: block; */
+    background-image: url(../images/send-bttn.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: fit-content;
+    background-size: cover;
+    width: 182px;
+    height: 101px;
+    padding: 0;
+    align-self: center;
+    
+}
+
+
+
+.discription{
+    color: #4C5958;
+    margin: 0;
+}
+
+.edit-frm .label{
+    color: #027333;
+    font-weight: 500;
+
+}
+
+
+.edit-frm input[type=text]:focus {
+    border: 3px solid #04D924;
+    outline: 0 none;
+    box-shadow: none;
+  }
+
+  .edit-frm textarea:focus{
+    border: 3px solid #04D924;
+    outline: 0 none;
+    box-shadow: none;
+  }
+
+.edit-frm .form-group{
+      margin-bottom: 20px;
+  }
+
+.edit-frm .form-check:nth-of-type(5){
+    margin-bottom: 20px;
+}
+
+.edit-frm .form-check input[type=checkbox]:checked{
+    background-color: #027333;
+}
+
+.params h1{
+    font-size: 70px;
+}
+
+.params h2{
+    color:#027333;
+}
+
+.params span{
+    color:#027333;
+    font-weight: 500;
+}
+
+.params h5{
+    display: block;
+    text-align: right;
+    font-size: small;
+    margin-bottom: 20px;
+}
+
+.params p{
+    font-weight: bold;
+}
+
+.edit-frm #errors{
+    display: none;
+}
+
+.edit-frm .error{
+    display: none;
+}
+
+
+.frm1 #submit{
+    align-self: center;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.frm1 .row{
+    justify-content: center;
+}
+
+.frm1 .form-group, .frm1 .form-check{
+    margin-bottom: 20px;
+}
+
+.frm1 #errors{
+    display: none;
+}
+
+.frm1 .error{
+    display: none;
+}
+ 
+#last-check{
+    margin-bottom: 20px;
+}
